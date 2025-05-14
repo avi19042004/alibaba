@@ -1,0 +1,8 @@
+Flask
+selenium
+undetected-chromedriver
+openai
+groq
+requests
+beautifulsoup4
+pillow
