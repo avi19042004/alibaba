@@ -62,9 +62,10 @@ def init_browser():
     options.add_argument("--disable-gpu")
     options.add_argument("--start-maximized")
     options.add_argument("--lang=en-US")
-    # options.add_argument("--headless=new")
+    options.add_argument("--headless=new")
     options.add_argument('--enable-features=DnsOverHttps')
     options.add_argument('--dns-over-https-servers=https://dns.google/dns-query')
+    options.binary_location = "/usr/bin/google-chrome"
 
 
     driver = uc.Chrome(options=options)
