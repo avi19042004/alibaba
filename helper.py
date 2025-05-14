@@ -3,8 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
-import tkinter as tk
-from tkinter import messagebox
 import psutil
 import undetected_chromedriver as uc
 import requests
@@ -28,9 +26,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 # ------------------ HELPERS ------------------
 def show_popup(message):
-    root = tk.Tk()
-    root.withdraw()
-    messagebox.showerror("Error", message)
+    print("Error", message)
 
 def log_error(msg):
     with open(ERROR_LOG, "a", encoding="utf-8") as f:
